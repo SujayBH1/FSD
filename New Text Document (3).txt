@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<form name="calculator">
+<label>Num1: </label>
+<input type="text" id="t1"></br>
+<label>Num2: </label>
+<input type="text" id="t2"></br>
+<input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+<label>Total: </label>
+<input type="textfield" name="ans" vaue="">
+<input type="reset">
+</form>
+</body>
+</html>

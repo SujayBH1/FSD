@@ -1,0 +1,17 @@
+<html>
+<body>
+<form name="details">
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<script>
+document.getElementById('p1').innerHTML=
+localStorage.getItem("NUM1");
+document.getElementById('p2').innerHTML=
+localStorage.getItem("NUM2");
+document.getElementById('p3').innerHTML=
+localStorage.getItem(parseInt(localStorage.getItem("NUM1")+parseInt(localStorage.getItem("NUM2"))));
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<form name="details" method="post" action="">
+<lable>name:</lable>
+<input type="text" id="1"><br>
+<lable>password:</lable>
+<input type="password" id="2"><br>
+<input type="submit" onsubmit="validate()">
+<input type="reset">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+

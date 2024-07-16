@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var name1,pass;
+name1=document.getElementById('t1').value;
+pass=document.getElementById('t2').value;
+if(name1=="")
+ alert("enter the name"); 
+else if(pass.length<8)
+ alert("minimum 8 char");
+else 
+ alert("form submitted");
+}
+</script>
+</head>
+<body>
+<form name="details" method="post" action="">
+<lable>name:</lable>
+<input type="text" id="t1"><br>
+<lable>password:</lable>
+<input type="password" id="t2"><br>
+<input type="submit" onclick="validate()">
+<input type="reset">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+

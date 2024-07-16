@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+<p id="1"> </p>
+<script>
+const person={name:"sam",age:12,city:"hassan",
+                           display: function()
+                           {
+                           return this.name;
+                          }
+                          }
+document.getElementById('1').innerHTML = person.display;
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <script>
+    function calculate() {
+      var a = document.getElementById('t1').value;
+      var b = document.getElementById('t2').value;
+      var c = document.getElementById('t3').value;
+      var d = parseInt(a);
+      var e = parseInt(b);
+      if(c=="+")
+       var result = d + e;
+     else if(c=="-")
+       var result = d - e;
+     else if(c=="*")
+       var result = d * e;  
+     else if(c=="/")
+       var result = d / e;
+     else
+       var result = d % e;    
+      document.calculator.f.value = result;
+    }
+  </script>
+</head>
+<body>
+  <form name="calculator">
+    <label>Num1: </label>
+    <input type="text" id="t1"><br>
+    <label>Num2: </label>
+    <input type="text" id="t2"><br>
+    <label>Operator: </label>
+    <input type="text" id="t3"><br>
+    <input type="button" id="t4" value="Result" onclick="calculate()"><br>
+    <input type="text" name="f" value=""><br>
+    <input type="reset">
+  </form>
+</body>
+</html>

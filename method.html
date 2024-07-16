@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id ='p1'></p>
+        <script>
+            function Person(fname,lname)
+            {
+                this.fname=fname;
+                this.lname=lname;
+            }
+            Person.prototype.name=function()
+            {return this.fname+""+this.lname}
+            const p=new Person("thushar","adhi");
+            document.getElementById('p1').innerHTML=p.name();
+        </script>
+    </body>
+</html>

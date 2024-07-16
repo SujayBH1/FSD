@@ -1,0 +1,15 @@
+<html>
+<body>
+<p id ="1"> </p>
+<script>
+function Persons(name,age,city)
+{
+this.name=name;
+this.age=age;
+this.city=city;
+}
+const person = new Persons("Sam",13,"Hassan");
+document.getElementById('1').innerHTML = person.name+" is "+person.age+" years old and is living in "+person.city;
+</script>
+</body>
+</html>

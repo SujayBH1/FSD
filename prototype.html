@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id ='p1'></p>
+        <script>
+            function Person(fname,lname)
+            {
+                this.fname=fname;
+                this.lname=lname;
+            }
+            Person.prototype.nationality="Indian";
+            const p = new Person("jhon","smith");
+            document.getElementById('p1').innerHTML=p.nationality;
+        </script>
+    </body>
+</html>
