@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+class Car extends React.Component {
+  render() {
+    return <h2>I am the Car</h2>;
+  }
+}
+class Garage extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3>Inside Garage</h3>
+        <Car />  
+      </div>
+    );
+  }
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);

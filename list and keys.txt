@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+function Car(props){
+  return(<h1>{props.brand}</h1>)
+}
+function Garage(){
+  const Cars=[{id:1,brand:"Audi"},
+    {id:2,brand:"Mercedes"},
+    {id:3,brand:"Toyota"},
+    {id:4,brand:"Bugati"}];
+return(<div>
+  {Cars.map((a)=><Car key={a.id}
+  brand={a.brand}/>)}
+  </div>);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage/>);

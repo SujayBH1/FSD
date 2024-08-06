@@ -1,0 +1,33 @@
+import React from "react";
+import ReactDOM from'react-dom/client';
+import { useState } from "react";
+function Rform(){
+	const [name,setName] = useState('');
+	const [submit,setSubmitted]=useState(false);
+	const handelName=(e)=>
+	{
+		setName(e.target.value);
+	}
+	const handelSubmit=(e)=>
+	{
+		e.preventDefault();
+		setSubmitted(true);
+	}
+	const success=()=>
+	{
+		if(submit)
+			return(<div>
+				<h1>user {name} Submitted successfully</h1>
+			</div>);
+	}
+	return(
+		<div>{success()}
+		<form>
+			<label>name</label>
+			<input type="text" onChange={handelName} name={name}/><br></br>
+			<button type="submit" onClick={handelSubmit}>submit</button>
+			</form></div>
+	);
+}
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Rform/>)
